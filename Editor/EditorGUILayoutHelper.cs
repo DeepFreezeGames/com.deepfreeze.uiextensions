@@ -72,13 +72,46 @@ namespace EditorGUIExtensions.Editor
 
 	public class ColoredBlock : IDisposable
 	{
+		private Color oldColor;
+		
 		public ColoredBlock(Color color)
 		{
+			oldColor = GUI.color;
 			GUI.color = color;
 		}
 		public void Dispose()
 		{
-			GUI.color = Color.white;
+			GUI.color = oldColor;
+		}
+	}
+	
+	public class ColoredBackgroundBlock : IDisposable
+	{
+		private Color oldColor;
+		
+		public ColoredBackgroundBlock(Color color)
+		{
+			oldColor = GUI.backgroundColor;
+			GUI.backgroundColor = color;
+		}
+		public void Dispose()
+		{
+			GUI.backgroundColor = oldColor;
+		}
+	}
+	
+	public class ColoredContentBlock : IDisposable
+	{
+		private Color oldColor;
+		
+		public ColoredContentBlock(Color color)
+		{
+			oldColor = GUI.contentColor;
+			GUI.contentColor = color;
+		}
+		public void Dispose()
+		{
+			GUI.contentColor = oldColor;
 		}
 	}
 
@@ -123,7 +156,7 @@ namespace EditorGUIExtensions.Editor
 			return filepath;
 		}
 
-		public static int EnumButtonField(string label, int currentSelection, string[] options)
+		public static int RadioButtonField(string label, int currentSelection, string[] options)
 		{
 			using (new HorizontalBlock())
 			{
@@ -135,6 +168,28 @@ namespace EditorGUIExtensions.Editor
 				{
 					GUI.enabled = currentSelection != i;
 					if (GUILayout.Button(options[i]))
+					{
+						return i;
+					}
+					GUI.enabled = true;
+				}
+			}
+
+			return currentSelection;
+		}
+		
+		public static int RadioButtonField(string label, int currentSelection, string[] options, GUIStyle style)
+		{
+			using (new HorizontalBlock())
+			{
+				if (!string.IsNullOrEmpty(label))
+				{
+					GUILayout.Label(label);
+				}
+				for (var i = 0; i < options.Length; i++)
+				{
+					GUI.enabled = currentSelection != i;
+					if (GUILayout.Button(options[i], style))
 					{
 						return i;
 					}
