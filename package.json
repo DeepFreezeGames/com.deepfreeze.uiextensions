@@ -1,0 +1,16 @@
+{
+    "name": "com.deepfreeze.editorguiextensions",
+    "displayName": "Editor GUI Extensions",
+    "registry": "https://github.com/LiamAtDeepFreeze/EditorGUIExtensions.git",
+    "version": "0.0.1",
+    "unity": "2018.1",
+    "description": "A UPM package to make building Editor GUI elements in Unity easier.",
+    "keywords": [
+        "unity",
+        "packages",
+        "lit"
+    ],
+    "dependencies": {
+    },
+    "category": "Unity"
+}
