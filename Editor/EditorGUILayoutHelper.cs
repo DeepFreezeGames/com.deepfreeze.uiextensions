@@ -155,6 +155,22 @@ namespace EditorGUIExtensions.Editor
 			EditorGUILayout.EndHorizontal();
 			return filepath;
 		}
+		
+		
+		/// <summary>
+		/// Creates a folder path textfield with a browse button.
+		/// </summary>
+		public static string FolderLabel(GUIContent label, string name, float labelWidth, string path)
+		{
+			EditorGUILayout.BeginHorizontal();
+			var filepath = EditorGUILayout.TextField(label, path);
+			if (GUILayout.Button("Browse", GUILayout.MaxWidth(60)))
+			{
+				filepath = EditorUtility.SaveFolderPanel(name, path, "Folder");
+			}
+			EditorGUILayout.EndHorizontal();
+			return filepath;
+		}
 
 		public static int RadioButtonField(string label, int currentSelection, string[] options)
 		{
