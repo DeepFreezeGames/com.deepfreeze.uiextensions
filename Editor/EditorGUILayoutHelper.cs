@@ -150,6 +150,7 @@ namespace EditorGUIExtensions.Editor
 			var filepath = EditorGUILayout.TextField(name, path);
 			if (GUILayout.Button("Browse", GUILayout.MaxWidth(60)))
 			{
+				GUI.FocusControl(null);
 				filepath = EditorUtility.SaveFolderPanel(name, path, "Folder");
 			}
 			EditorGUILayout.EndHorizontal();
@@ -166,6 +167,7 @@ namespace EditorGUIExtensions.Editor
 			var filepath = EditorGUILayout.TextField(label, path);
 			if (GUILayout.Button("Browse", GUILayout.MaxWidth(60)))
 			{
+				GUI.FocusControl(null);
 				filepath = EditorUtility.SaveFolderPanel(name, path, "Folder");
 			}
 			EditorGUILayout.EndHorizontal();
