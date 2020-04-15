@@ -1,7 +1,7 @@
 {
-    "name": "com.deepfreeze.editorguiextensions",
-    "displayName": "Editor GUI Extensions",
-    "registry": "https://github.com/DeepFreezeGames/com.deepfreeze.editorguiextensions.git",
+    "name": "com.deepfreeze.uiextensions",
+    "displayName": "UI Extensions",
+    "registry": "https://github.com/DeepFreezeGames/com.deepfreeze.uiextensions.git",
     "version": "1.0.1",
     "unity": "2018.1",
     "description": "A UPM package to make building Editor GUI elements in Unity easier.",
