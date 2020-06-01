@@ -3,7 +3,7 @@
 A UPM package to make building Editor GUI elements in Unity easier. It contains a series of disposable to help clean up your editor code.
 
 To use this package, add this line to your manifest.json file inside the Packages folder of your Unity project.
-"com.deepfreeze.editorguiextensions": "https://github.com/DeepFreezeGames/com.deepfreeze.uiextensions.git",
+"com.deepfreeze.uiextensions": "https://github.com/DeepFreezeGames/com.deepfreeze.uiextensions.git",
 
 # Components
 The EditorGUILayoutHelper class contains various helper methods to make building Editor UI elements quicker and cleaner than the normal way.
