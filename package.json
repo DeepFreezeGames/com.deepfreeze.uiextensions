@@ -11,6 +11,7 @@
         "lit"
     ],
     "dependencies": {
+        "com.deepfreeze.extensions" : "https://github.com/DeepFreezeGames/com.deepfreeze.extensions.git"
     },
     "category": "Unity"
 }
