@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace UIExtensions.Editor
+namespace DeepFreeze.Packages.UIExtensions.Editor
 {
 	/// <summary>
 	/// Creates a vertical block for Unity Editor extensions. To use this follow the example below.

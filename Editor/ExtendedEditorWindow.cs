@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace UIExtensions.Editor
+namespace DeepFreeze.Packages.UIExtensions.Editor
 {
     public class ExtendedEditorWindow : EditorWindow
     {

@@ -1,7 +1,7 @@
-using UIExtensions.Runtime;
+using DeepFreeze.Packages.UIExtensions.Runtime;
 using UnityEditor;
 
-namespace UIExtensions.Editor
+namespace DeepFreeze.Packages.UIExtensions.Editor
 {
     [CustomEditor(typeof(TabGroup))]
     public class TabGroupEditor : UnityEditor.Editor

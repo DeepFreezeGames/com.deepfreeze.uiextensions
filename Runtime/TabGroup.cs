@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace UIExtensions.Runtime
+namespace DeepFreeze.Packages.UIExtensions.Runtime
 {
     public class TabGroup : MonoBehaviour
     {

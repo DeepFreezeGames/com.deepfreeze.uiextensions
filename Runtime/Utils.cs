@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UIExtensions.Runtime
+namespace DeepFreeze.Packages.UIExtensions.Runtime
 {
     public static class Utils
     {

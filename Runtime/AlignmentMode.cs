@@ -1,6 +1,6 @@
 using System;
 
-namespace UIExtensions.Runtime
+namespace DeepFreeze.Packages.UIExtensions.Runtime
 {
     [Serializable]
     public enum AlignmentMode

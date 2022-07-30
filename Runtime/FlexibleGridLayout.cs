@@ -1,7 +1,7 @@
-using UIExtensions.Runtime;
+using DeepFreeze.Packages.UIExtensions.Runtime;
 using UnityEngine.UI;
 
-namespace UIExtensions.Runtime
+namespace DeepFreeze.Packages.UIExtensions.Runtime
 {
     public class FlexibleGridLayout : LayoutGroup
     {

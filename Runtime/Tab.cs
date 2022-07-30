@@ -1,6 +1,6 @@
 using UnityEngine.UI;
 
-namespace UIExtensions.Runtime
+namespace DeepFreeze.Packages.UIExtensions.Runtime
 {
     public class Tab : Button
     {

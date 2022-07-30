@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEditor;
 
-namespace UIExtensions.Editor
+namespace DeepFreeze.Packages.UIExtensions.Editor
 {
     public class HandlesExtensions
     {
