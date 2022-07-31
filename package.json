@@ -3,8 +3,8 @@
     "displayName": "UI Extensions",
     "author": {"name": "Deep Freeze Games", "url": "https://github.com/DeepFreezeGames"},
     "registry": "https://github.com/DeepFreezeGames/com.deepfreeze.uiextensions.git",
-    "version": "1.0.3",
-    "unity": "2019.0",
+    "version": "1.0.4",
+    "unity": "2019.1",
     "description": "A UPM package to make building Editor GUI elements in Unity easier.",
     "keywords": [
         "unity",
